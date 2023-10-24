@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="css/register.css" />
+  </head>
+  <body>
+    <div class="mainForm">
+      <div>
+        <p><%= locals.message %></p>
+        <h1>Register Now</h1>
+        <br>
+        <form action="/register" method="post">
+          <div>Name: <input type="text" name="name" /></div>
+          <br />
+          <div>email: <input type="email" name="email" /></div>
+          <br />
+          <div>Password: <input type="password" name="password" /></div>
+          <br />
+          <button type="submit">Sign up</button>
+        </form>
+        <br />
+        Already have a account? <a href="/login">Login</a>
+      </div>
+    </div>
+  </body>
+</html>
